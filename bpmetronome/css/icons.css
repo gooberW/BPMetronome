@@ -1,0 +1,32 @@
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    fill: var(--primary-color);
+    transition: transform 0.3s ease, background-color 0.1s ease;
+    overflow: visible ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.icon-settings {
+    -webkit-mask-image: url('../assets/icons/gear.svg');
+    mask-image: url('../assets/icons/gear.svg');
+}
+
+.icon-settings:hover {
+    transform: rotate(90deg);
+}
