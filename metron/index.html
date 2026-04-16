@@ -15,7 +15,7 @@
             <div class="setting-btn">
                 <div id="settings-btn" class="icon icon-settings"></div>
             </div>
-            <div id="time-sig-dropdown" class="time-sig">
+            <div id="time-sig-dropdown" data-value="4" class="time-sig">
                 <p class="time-sig-text">4/4</p>
             </div>
             <div id="accent-toggle" class="accent-toggle off">
@@ -45,10 +45,6 @@
         
             <div id="time-dots-container" class="row circle-row">
                 <!-- here the number of circles will be dynamic, based off of time signature -->
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
             </div>
             <div class="row btn-row">
                 <div class="play-btn">
@@ -78,6 +74,13 @@
                 <div class="sound-btn">Wood</div>
                 <div class="sound-btn">Custom</div>
             </div>
+        </div>
+
+        <div class="time-sig-list">
+            <div class="time-sig-item" data-value="4">4/4</div>
+            <div class="time-sig-item" data-value="4">3/4</div>
+            <div class="time-sig-item" data-value="4">2/4</div>
+            <div class="time-sig-item" data-value="4">6/8</div>
         </div>
     </div>
 

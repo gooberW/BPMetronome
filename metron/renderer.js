@@ -26,7 +26,26 @@ addEventListener("DOMContentLoaded", (event) => {
     // 3/4 = 3 dots
     // 6/8 = 6 dots
     // etc...
-    // maybe make this a function so i can reuse it? dunno
+    // maybe make this a function so i can reuse it
 
+    const timeSigBtn = document.getElementById("time-sig-dropdown");
+    var userTimeSignature = timeSigBtn.getAttribute("data-value");
+    console.log(userTimeSignature)
 
+    //maybe time signature will be an array? like [4,4] or [3,4]
+    // assuming thats true for now
+    // actually maybe time sig jsut gives the number of dots 
+    // so 4/4 would be 4 and 3/4 would be 3
+    for (let i = 0; i < userTimeSignature; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("circle");
+        timeDotsContainer.appendChild(dot);
+    }
+    // user time signature will be stored in local storage (?) 
+    // or do i just read it from the html file
 });
+
+function generateDots(timeSignature) {
+    
+    
+}

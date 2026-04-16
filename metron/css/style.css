@@ -80,6 +80,8 @@ p {
     font-weight: 400;
 }
 
+
+
 .accent-toggle.off {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -283,3 +285,45 @@ p {
     opacity: 0.5;
     font-size: 16px;
 }
+
+.time-sig {
+    anchor-name: --time-sig;
+}
+
+.time-sig-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    width: fit-content;
+    position: fixed;
+    top: anchor(bottom);
+    left: anchor(left);
+    position-anchor: --time-sig;
+    align-self: anchor(center);
+    margin-top: 0.5em;
+}
+
+.time-sig-list.hidden {
+    display: none;
+}
+
+.time-sig-item {
+    padding: 0.5em 1.5em;
+    border-bottom: var(--border);
+    background-color: var(--secondary-color);
+}
+
+.time-sig-item:last-child {
+    border: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+}
+
+.time-sig-item:first-child {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+
+}
+
