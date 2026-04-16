@@ -47,6 +47,11 @@
     mask-image: url('../assets/icons/play.svg');
 }
 
+.ivon-stop {
+    -webkit-mask-image: url('../assets/icons/stop.svg');
+    mask-image: url('../assets/icons/stop.svg');
+}
+
 .icon-arrow-down {
     -webkit-mask-image: url('../assets/icons/chevron-down.svg');
     mask-image: url('../assets/icons/chevron-down.svg');

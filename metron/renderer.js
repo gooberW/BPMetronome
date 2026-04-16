@@ -20,6 +20,14 @@ addEventListener("DOMContentLoaded", (event) => {
         localStorage.setItem("user-bpm", e.target.value);
     });
 
+    const playBtn = document.getElementById("play-btn");
+    playBtn.addEventListener("click", () => {
+        const bpm = parseInt(bpmSlider.value);
+        const timeSigBtn = document.getElementById("time-sig-dropdown");
+        var userTimeSignature = timeSigBtn.getAttribute("data-value");
+        startMetronome(bpm, userTimeSignature);
+    });
+
     const timeDotsContainer = document.getElementById("time-dots-container");
     // we fill the container with time dots according to the time signature
     // 4/4 = 4 dots
