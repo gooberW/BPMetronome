@@ -80,7 +80,10 @@ p {
     font-weight: 400;
 }
 
-
+.time-sig:active, .sound-btn:active, .accent-toggle:active,
+.play-btn:active, .tap-btn:active {
+    transform: scale(0.95);
+}
 
 .accent-toggle.off {
     background-color: var(--primary-color);

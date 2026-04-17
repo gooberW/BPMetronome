@@ -4,6 +4,21 @@ addEventListener("DOMContentLoaded", (event) => {
     // this is the bar
     const bpmSlider = document.getElementById("bpm-range");
 
+    const accentToggle = document.getElementById("accent-toggle");
+    const accentToggleText = document.getElementById("accent-toggle-text");
+
+    accentToggle.onclick = () => {
+        if (accentToggle.classList.contains("off")) {
+            accentToggle.classList.remove("off");
+            accentToggle.classList.add("on");
+            accentToggleText.textContent = "Accent On";
+        } else {
+            accentToggle.classList.remove("on");
+            accentToggle.classList.add("off");
+            accentToggleText.textContent = "Accent Off";
+        }
+    }
+
     const updateTempo = (value) => {
         tempoDisplay.textContent = value;
         
