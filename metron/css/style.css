@@ -81,7 +81,7 @@ p {
 }
 
 .time-sig:active, .sound-btn:active, .accent-toggle:active,
-.play-btn:active, .tap-btn:active {
+.play-btn:active, .tap-btn:active, .close-btn:active, .minimize-btn:active {
     transform: scale(0.95);
 }
 
